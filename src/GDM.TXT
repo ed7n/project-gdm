@@ -1,0 +1,120 @@
+About Project Gdm u5r3 by Brendon, 06/08/2022.
+
+0   0   0   1   "#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQ   6   7   7   8
+1   5   9   3   RSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~!—    8   2   6   0
+
+
+——About Gdm
+GDM (stylized as Gdm) is a subsidiary of ED7 ENTERTAINMENT (EDEN) for
+audioworks. This file describes the original 2017 project on equalization
+curves, henceforth referred to as Gdm.
+
+
+——About Project Gdm
+Gdm is mainly based on Loudness Compensation. Rather than extreme low and high
+frequencies, it amplifies the lesser extremes. Amplification gradually decreases
+as they approach toward each other. See the following figures 1 and 2 for a
+visualization of the difference.
+
+FIGURE 1: Standard Loudness Equalization Curve
+  Horizontal Axis: Frequency band
+    Vertical Axis: Amplification
+
+  +\           /+
+  + \         / +
+  +  |       |  +
+  +  |       |  +
+  +  |       |  +
+  0 + + + + + + +
+
+FIGURE 2: Gdm Modification from Above
+
+  +/\         /\+
+  +  \       /  +
+  +   |     |   +
+  +   |     |   +
+  +   |     |   +
+  0 + + + + + + +
+
+Optionally, Gdm also amplifies the untouched middle frequencies in a similar
+manner but on a wider gamut. This part has three options: whether to prioritize
+on the higher, lower, or central mids. Applying this effect no longer makes Gdm
+close to Loudness Compensation, since the latter does nothing to the middle
+frequencies. See the following figure 3 for a visualization of this.
+
+FIGURE 3: FIGURE 2 with Higher-Mid Amplification
+
+  +/\         /\+
+  +  \       /  +
+  +   |     |   +
+  +   |   / |   +
+  +   |  / \|   +
+  0 + + + + + + +
+
+
+————Implementations
+These are all implemented as Audacity equalizer presets. They can be applied in
+chains at either full or half intensity. In addition, five combinations of these
+presets have been adapted to Audacious.
+
+The Audacity presets comes in the following format:
+
+  Gdm <intensity> <frequency gamut>
+
+       Intensities: Full, Half
+  Frequency Gamuts: Bass, Mid-Bass, Mid, Mid-Treble, Treble
+
+The three combinations adapted to Audacious are:
+
+  Gdm Essential   Gdm Half Bass + Gdm Half Treble
+  Gdm Standard    Gdm Full Bass + Gdm Full Treble + Gdm Half Mid-Treble
+  Gdm Extended    Gdm Full Bass + Gdm Full Treble + Gdm Half Mid-Treble
+                  + Gdm Half Mid-Bass
+  Gdm2 Bass       Gdm Full Bass
+  Gdm2 Treble     Gdm Full Treble + Gdm Half Mid-Treble
+
+
+————Gdm2
+Gdm2 revises the original curves. It features smoother bass and sharper treble,
+and the mids have been redefined for more natural gains. Notably, the upper
+boundary for lower mid has been reduced, and the central mid range has been
+shifted leftwards.
+
+
+————Subjectivity
+Gdm is very subjective. The curves are up to my hearing, and my use of cheap
+earbuds during my teen years, judging on how the average produces sound.
+
+
+——History
+
+————Beginnings
+It all began in 2009 with my first attempt to enhance audio quality with
+equalization curves for Nero WaveEditor 4 as HyperPRO. The end result gave me
+ear-piercing bass, no focus on the mids, but the treble was fine. HyperPRO then
+went dormant for about five years.
+
+In 2014, I got myself hooked into Canto Della Terra, an Italian song sung by
+blind singer Andrea Bocelli. After listening to it many times, I ended up not
+enjoying as much, simply because it lacks resonating bass and crisp treble. So I
+got back to HyperPRO and started working on new equalization curves with similar
+treble enhancements.
+
+In 2015, I worked on the mids, renamed HyperPRO to Gdm, and publicized the
+project. HyperPRO sounded cheesy, and was used by Toshiba for one of its
+technologies.
+
+
+————Project Gdm
+2017 Q2: Gdm was revised into Gdm2.
+
+
+——License
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
+International License. To view a copy of this license, visit
+[ http://creativecommons.org/licenses/by-nc-sa/4.0 ] or send a letter to
+Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+
+——
+End of GDM.TXT
